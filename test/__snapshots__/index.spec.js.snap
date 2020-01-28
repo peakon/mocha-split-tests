@@ -38,32 +38,34 @@ exports[`index distributeByRuntime when more than 90% of runtime stats are avail
 Array [
   Object {
     "files": Array [
-      "9",
+      "10",
+      "3",
       "2",
+    ],
+    "size": 1500,
+  },
+  Object {
+    "files": Array [
+      "9",
+      "4",
       "1",
     ],
-    "size": 1200,
+    "size": 1400,
   },
   Object {
     "files": Array [
       "8",
-      "3",
+      "5",
+      "11",
     ],
-    "size": 1100,
+    "size": 1300,
   },
   Object {
     "files": Array [
       "7",
-      "4",
-    ],
-    "size": 1100,
-  },
-  Object {
-    "files": Array [
       "6",
-      "5",
     ],
-    "size": 1100,
+    "size": 1300,
   },
 ]
 `;

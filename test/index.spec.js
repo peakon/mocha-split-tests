@@ -77,7 +77,8 @@ describe("index", function() {
           .set("6", 600)
           .set("7", 700)
           .set("8", 800)
-          .set("9", 900);
+          .set("9", 900)
+          .set("10", 1000);
         const testFiles = [
           { path: "1", size: 1 },
           { path: "2", size: 2 },
@@ -87,7 +88,9 @@ describe("index", function() {
           { path: "6", size: 6 },
           { path: "7", size: 7 },
           { path: "8", size: 8 },
-          { path: "9", size: 9 }
+          { path: "9", size: 9 },
+          { path: "10", size: 10 },
+          { path: "11", size: 11 }
         ];
         const result = await distributeByRuntime({
           testFiles,
