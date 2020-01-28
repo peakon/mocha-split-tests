@@ -1,6 +1,6 @@
 "use strict";
 
-const cli = require("../cli");
+const cli = require("../lib/cli");
 
 describe("cli", function() {
   it("parses command line args and distributes tests into groups", async function() {

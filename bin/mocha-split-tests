@@ -2,6 +2,6 @@
 
 "use strict";
 
-require("../cli")
+require("../lib/cli")
   .run()
   .then(result => console.log(result));

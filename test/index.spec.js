@@ -5,7 +5,7 @@ const {
   loadRuntimeStats,
   addKnownRuntimes,
   distributeByRuntime
-} = require("../index");
+} = require("../lib/index");
 
 describe("index", function() {
   describe("listFiles", function() {

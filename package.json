@@ -2,10 +2,12 @@
   "name": "@peakon/mocha-split-tests",
   "version": "0.0.1",
   "description": "Distribute mocha specs between concurrent test machines / containers on CI based on previously-recorded test runtime",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "lint": "eslint lib test",
+    "format": "prettier --check --write lib/**/*.js test/**/*.js"
   },
   "bin": {
     "mocha-split-tests": "./bin/mocha-split-tests"
@@ -28,13 +30,35 @@
     "glob": "^7.1.6"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "husky": "^4.2.1",
     "jest": "^25.1.0",
     "prettier": "^1.19.1"
   },
+  "peerDependencies": {
+    "mocha": ">=6"
+  },
   "prettier": {},
+  "eslintConfig": {
+    "extends": [
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 8
+    },
+    "rules": {
+      "semi": "error"
+    }
+  },
   "jest": {
     "collectCoverageFrom": [
       "*.js"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format"
+    }
   }
 }
