@@ -54,7 +54,8 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "lib/**/*.js"
+      "lib/**/*.js",
+      "reporter/**/*.js"
     ]
   },
   "husky": {
