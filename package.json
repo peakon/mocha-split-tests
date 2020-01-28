@@ -48,7 +48,8 @@
       "ecmaVersion": 8
     },
     "rules": {
-      "semi": "error"
+      "semi": "error",
+      "no-console":"error"
     }
   },
   "jest": {
