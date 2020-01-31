@@ -37,7 +37,8 @@
     "prettier": "^1.19.1"
   },
   "peerDependencies": {
-    "mocha": ">=6"
+    "mocha": ">=6",
+    "@wdio/reporter": ">=5"
   },
   "prettier": {},
   "eslintConfig": {

@@ -39,7 +39,7 @@ describe("index", function() {
     });
 
     describe("when runtime.log does not exist", function() {
-      it("should fail with error", async function() {
+      it("should not fail with error", async function() {
         const stats = await loadRuntimeStats("/invalid/path/to/runtime.log");
         expect(stats.size).toEqual(0);
       });

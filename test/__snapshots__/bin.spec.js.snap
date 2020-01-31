@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`bin/mocha-split-tests script can be executed 1`] = `
+exports[`bin/mocha-split-tests script can accepts glob pattern for multiple runtime logs 1`] = `
+"test/data/fakeSpecs/specs/1.spec
+"
+`;
+
+exports[`bin/mocha-split-tests script can accepts path to runtime.log file 1`] = `
 "test/data/fakeSpecs/2.spec;test/data/fakeSpecs/specs/1.spec
 "
 `;
