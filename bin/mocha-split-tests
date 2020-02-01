@@ -3,4 +3,4 @@
 "use strict";
 
 const result = require("../lib/cli").run();
-console.log(result);
+console.log(result); // eslint-disable-line no-console
