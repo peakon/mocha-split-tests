@@ -2,6 +2,5 @@
 
 "use strict";
 
-require("../lib/cli")
-  .run()
-  .then(result => console.log(result));
+const result = require("../lib/cli").run();
+console.log(result);

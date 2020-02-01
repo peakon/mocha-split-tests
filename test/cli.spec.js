@@ -3,7 +3,7 @@
 const cli = require("../lib/cli");
 
 describe("cli", function() {
-  it("parses command line args and distributes tests into groups", async function() {
+  it("parses command line args and distributes tests into groups", function() {
     process.argv.push(
       "-t",
       "3",
@@ -14,6 +14,6 @@ describe("cli", function() {
       "-f",
       "test/data/fakeSpecs/**/*.spec"
     );
-    expect(await cli.run()).toMatchSnapshot();
+    expect(cli.run()).toMatchSnapshot();
   });
 });
