@@ -8,6 +8,7 @@ Array [
       "2",
       "1",
     ],
+    "runtime": 300,
     "size": 12,
   },
   Object {
@@ -15,6 +16,7 @@ Array [
       "8",
       "3",
     ],
+    "runtime": 1100,
     "size": 11,
   },
   Object {
@@ -22,6 +24,7 @@ Array [
       "7",
       "4",
     ],
+    "runtime": 1100,
     "size": 11,
   },
   Object {
@@ -29,6 +32,7 @@ Array [
       "6",
       "5",
     ],
+    "runtime": 1100,
     "size": 11,
   },
 ]
@@ -38,34 +42,37 @@ exports[`index distributeByRuntime when more than 90% of runtime stats are avail
 Array [
   Object {
     "files": Array [
-      "10",
-      "3",
-      "2",
-    ],
-    "size": 1500,
-  },
-  Object {
-    "files": Array [
       "9",
-      "4",
+      "2",
       "1",
     ],
-    "size": 1400,
+    "runtime": 1200,
+    "size": 12,
   },
   Object {
     "files": Array [
       "8",
-      "5",
-      "11",
+      "3",
+      "10",
     ],
-    "size": 1300,
+    "runtime": 1100,
+    "size": 21,
   },
   Object {
     "files": Array [
       "7",
-      "6",
+      "4",
     ],
-    "size": 1300,
+    "runtime": 1100,
+    "size": 11,
+  },
+  Object {
+    "files": Array [
+      "6",
+      "5",
+    ],
+    "runtime": 1100,
+    "size": 11,
   },
 ]
 `;

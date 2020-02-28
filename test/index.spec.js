@@ -3,7 +3,7 @@
 const {
   listFiles,
   loadRuntimeStats,
-  addKnownRuntimes,
+  attachRuntimesToFiles,
   distributeByRuntime
 } = require("../lib/index");
 
@@ -57,10 +57,10 @@ describe("index", function() {
         .set("test/1.spec.js", 100)
         .set("test/2.spec.js", 200)
         .set("test/4.spec.js", 400);
-      expect(addKnownRuntimes(testFiles, runtimeStats)).toEqual([
+      expect(attachRuntimesToFiles(testFiles, runtimeStats)).toEqual([
         { path: "test/1.spec.js", size: 1, runtime: 100 },
         { path: "test/2.spec.js", size: 2, runtime: 200 },
-        { path: "test/3.spec.js", size: 3, runtime: undefined }
+        { path: "test/3.spec.js", size: 3, runtime: 0 }
       ]);
     });
   });
@@ -77,8 +77,7 @@ describe("index", function() {
           .set("6", 600)
           .set("7", 700)
           .set("8", 800)
-          .set("9", 900)
-          .set("10", 1000);
+          .set("9", 900);
         const testFiles = [
           { path: "1", size: 1 },
           { path: "2", size: 2 },
@@ -89,8 +88,7 @@ describe("index", function() {
           { path: "7", size: 7 },
           { path: "8", size: 8 },
           { path: "9", size: 9 },
-          { path: "10", size: 10 },
-          { path: "11", size: 11 }
+          { path: "10", size: 10 }
         ];
         const result = distributeByRuntime({
           testFiles,
