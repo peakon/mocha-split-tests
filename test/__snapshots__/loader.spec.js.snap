@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loader getFileRuntimeStats when runtime.log contains malformed rows loads only well-formed rows from file 1`] = `
+Map {
+  "test/controllers/application_controller.spec.js" => 5084,
+  "test/models/user.spec.js" => 5084,
+  "test/does-not-exist-anymore.spec.js" => 234,
+}
+`;
+
+exports[`loader getFileRuntimeStats when runtime.log has no malformed rows loads all stats from a well-formed file 1`] = `
+Map {
+  "test/controllers/application_controller.spec.js" => 5084,
+  "test/models/user.spec.js" => 5084,
+  "test/models/company.spec.js" => 1234,
+  "test/routers/foo.spec.js" => 20,
+  "test/config/config.spec.js" => 345,
+  "test/models/account.spec.js" => 2435,
+  "test/routers/bar.spec.js" => 20,
+  "test/config/buz.spec.js" => 345,
+  "test/models/aaa.spec.js" => 2435,
+  "test/does-not-exist-anymore.spec.js" => 234,
+  "test/does-not-exist-anymore_2.spec.js" => 234234,
+}
+`;
+
+exports[`loader getTestFilesInfo should return files when pattern is correct 1`] = `
+Array [
+  Object {
+    "path": "test/data/fakeSpecs/2.spec",
+    "size": 2,
+  },
+  Object {
+    "path": "test/data/fakeSpecs/3.spec",
+    "size": 3,
+  },
+  Object {
+    "path": "test/data/fakeSpecs/4.spec",
+    "size": 4,
+  },
+  Object {
+    "path": "test/data/fakeSpecs/specs/1.spec",
+    "size": 1,
+  },
+]
+`;

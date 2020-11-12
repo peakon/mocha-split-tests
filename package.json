@@ -24,8 +24,7 @@
     "testing",
     "test",
     "CI",
-    "automation",
-    "parallelisation"
+    "automation"
   ],
   "author": "Peakon",
   "license": "MIT",
