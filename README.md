@@ -1,4 +1,6 @@
 # @peakon/mocha-split-tests
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fpeakon%2Fmocha-split-tests.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fpeakon%2Fmocha-split-tests?ref=badge_shield)
+
 
 A tool that helps optimizing overall test runtime for big test suites that can be distributed across multiple containers / VMs running in parallel.
 
@@ -105,3 +107,6 @@ git push --tags
 ## License
 
 MIT
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fpeakon%2Fmocha-split-tests.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fpeakon%2Fmocha-split-tests?ref=badge_large)
