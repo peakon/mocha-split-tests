@@ -29,7 +29,7 @@
   "author": "Peakon",
   "license": "MIT",
   "dependencies": {
-    "commander": "^4.1.0",
+    "commander": "^7.0.0",
     "glob": "^7.1.6"
   },
   "devDependencies": {

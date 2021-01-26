@@ -6,15 +6,29 @@ const {
 
 describe("loader", function() {
   describe("getTestFilesInfo", function() {
-    it("should fail when no files are found", function() {
-      const pattern = "**/doesnotexist/*.js";
-      expect(() => getTestFilesInfo(pattern)).toThrow(
-        `No files matching a pattern: ${pattern}`
+    it("should throw on missings patterns", function() {
+      const patterns = null;
+      expect(() => getTestFilesInfo(patterns)).toThrow(
+        "Invalid patterns supplied."
+      );
+    });
+
+    it("should throw on invalid patterns", function() {
+      const patterns = [];
+      expect(() => getTestFilesInfo(patterns)).toThrow(
+        "Invalid patterns supplied."
+      );
+    });
+
+    it("should throw when no files are found", function() {
+      const patterns = ["**/doesnotexist/*.js"];
+      expect(() => getTestFilesInfo(patterns)).toThrow(
+        `No files matched patterns: ${patterns[0]}`
       );
     });
 
     it("should return files when pattern is correct", function() {
-      expect(getTestFilesInfo("test/data/**/*.spec")).toMatchSnapshot();
+      expect(getTestFilesInfo(["test/data/**/*.spec"])).toMatchSnapshot();
     });
   });
 

@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`cli parses command line args and distributes tests into groups 1`] = `"test/data/fakeSpecs/2.spec test/data/fakeSpecs/specs/1.spec"`;
+
+exports[`cli parses multiple globs 1`] = `"test/data/fakeSpecs/4.spec test/data/fakeSpecs/3.spec test/data/fakeSpecs/2.spec test/data/fakeSpecs/specs/1.spec"`;
